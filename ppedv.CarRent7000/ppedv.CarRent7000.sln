@@ -5,6 +5,10 @@ VisualStudioVersion = 17.8.34205.153
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ppedv.CarRent7000.Model", "ppedv.CarRent7000.Model\ppedv.CarRent7000.Model.csproj", "{FF4106DC-4C06-455D-9564-C03FC6B8E922}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ppedv.CarRent7000.Data.EfCore", "ppedv.CarRent7000.Data.EfCore\ppedv.CarRent7000.Data.EfCore.csproj", "{3897586B-4E90-4BC7-BAFA-D4D84873E0D1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ppedv.CarRent7000.Data.EfCore.Tests", "ppedv.CarRent7000.Data.EfCore.Tests\ppedv.CarRent7000.Data.EfCore.Tests.csproj", "{836FABDE-6BAA-4E2F-897E-E42275B35958}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{FF4106DC-4C06-455D-9564-C03FC6B8E922}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FF4106DC-4C06-455D-9564-C03FC6B8E922}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FF4106DC-4C06-455D-9564-C03FC6B8E922}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3897586B-4E90-4BC7-BAFA-D4D84873E0D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3897586B-4E90-4BC7-BAFA-D4D84873E0D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3897586B-4E90-4BC7-BAFA-D4D84873E0D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3897586B-4E90-4BC7-BAFA-D4D84873E0D1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{836FABDE-6BAA-4E2F-897E-E42275B35958}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{836FABDE-6BAA-4E2F-897E-E42275B35958}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{836FABDE-6BAA-4E2F-897E-E42275B35958}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{836FABDE-6BAA-4E2F-897E-E42275B35958}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
