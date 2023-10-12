@@ -29,7 +29,7 @@ Console.WriteLine("DB open");
 
 DbCommand sqlCommand = factory.CreateCommand();
 sqlCommand.Connection = con;
-sqlCommand.CommandText = "SELECT TOP(3) COUNT(*) FROM Employees";
+sqlCommand.CommandText = "SELECT COUNT(*) FROM Employees";
 
 var rowCount = sqlCommand.ExecuteScalar();
 Console.WriteLine($"{rowCount} Employees in DB");
