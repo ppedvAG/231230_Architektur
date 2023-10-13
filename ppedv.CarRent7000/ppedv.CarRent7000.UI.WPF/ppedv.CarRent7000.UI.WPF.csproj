@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ppedv.CarRent7000.Data.EfCore\ppedv.CarRent7000.Data.EfCore.csproj" />
+    <ProjectReference Include="..\ppedv.CarRent7000.Logic.Core\ppedv.CarRent7000.Logic.Core.csproj" />
+    <ProjectReference Include="..\ppedv.CarRent7000.Model\ppedv.CarRent7000.Model.csproj" />
+  </ItemGroup>
+
+</Project>
