@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ppedv.CarRent7000.Logic.Cor
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ppedv.CarRent7000.UI.WPF", "ppedv.CarRent7000.UI.WPF\ppedv.CarRent7000.UI.WPF.csproj", "{512CD4C4-458F-4B99-81BD-89881E1EAD82}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ppedv.CarRent7000.UI.Web", "ppedv.CarRent7000.UI.Web\ppedv.CarRent7000.UI.Web.csproj", "{493C4C27-2262-4413-9DFF-8FBC9F5A39AE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,10 @@ Global
 		{512CD4C4-458F-4B99-81BD-89881E1EAD82}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{512CD4C4-458F-4B99-81BD-89881E1EAD82}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{512CD4C4-458F-4B99-81BD-89881E1EAD82}.Release|Any CPU.Build.0 = Release|Any CPU
+		{493C4C27-2262-4413-9DFF-8FBC9F5A39AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{493C4C27-2262-4413-9DFF-8FBC9F5A39AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{493C4C27-2262-4413-9DFF-8FBC9F5A39AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{493C4C27-2262-4413-9DFF-8FBC9F5A39AE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
