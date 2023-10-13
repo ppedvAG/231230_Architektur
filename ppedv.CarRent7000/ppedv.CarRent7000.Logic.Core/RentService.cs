@@ -12,18 +12,29 @@ namespace ppedv.CarRent7000.Logic.Core
             this.repository = repository;
         }
 
+        public bool IsCarAvailable(Car car, DateTime start, DateTime end)
+        {
+            if (car == null)
+                throw new ArgumentNullException(nameof(car));
+
+            if(end<start)
+                throw new ArgumentException("Ende darf nicht vor dem Start sein");
+
+            // Check if there are any existing rentals for the car that overlap with the specified time period
+            var overlappingRentals = repository.GetAll<Rent>()
+                .Where(x => x.Car == car &&
+                            !(x.StartDate >= end || x.EndDate <= start))
+                .ToList();
+
+            return overlappingRentals.Count == 0;
+        }
+
 
         public IEnumerable<Car> GetAvailableCars(DateTime start, DateTime end)
         {
             throw new NotImplementedException();
         }
 
-        public bool IsCarAvailable(Car car, DateTime start, DateTime end)
-        {
-            var query = repository.GetAll<Rent>().Where(x => x.Car == car);
-
-            return query.Any();
-        }
 
         public int CalcBillingDays(Rent rent)
         {
