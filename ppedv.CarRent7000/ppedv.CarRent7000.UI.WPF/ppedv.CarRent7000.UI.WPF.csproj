@@ -9,6 +9,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="CommunityToolkit.Mvvm" Version="8.2.1" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\ppedv.CarRent7000.Data.EfCore\ppedv.CarRent7000.Data.EfCore.csproj" />
     <ProjectReference Include="..\ppedv.CarRent7000.Logic.Core\ppedv.CarRent7000.Logic.Core.csproj" />
     <ProjectReference Include="..\ppedv.CarRent7000.Model\ppedv.CarRent7000.Model.csproj" />

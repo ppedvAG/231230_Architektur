@@ -12,7 +12,7 @@
     <DockPanel>
         <WrapPanel Margin="4" DockPanel.Dock="Top">
             <Button Command="{Binding SaveCommand}" Margin="4,0">💾 Speichen</Button>
-            <Button Margin="4,0">🆕 Neu</Button>
+            <Button Command="{Binding NewCarCommand}" Margin="4,0">🆕 Neu</Button>
             <Button Margin="4,0">❌ Löschen</Button>
         </WrapPanel>
         <Grid>

@@ -1,30 +1,32 @@
-﻿using ppedv.CarRent7000.Model.Contracts;
+﻿using CommunityToolkit.Mvvm.ComponentModel;
+using CommunityToolkit.Mvvm.Input;
+using ppedv.CarRent7000.Model.Contracts;
 using ppedv.CarRent7000.Model.DomainModel;
 using System.Collections.ObjectModel;
-using System.ComponentModel;
 using System.Windows.Input;
 
 
 namespace ppedv.CarRent7000.UI.WPF.ViewModel
 {
-    public class CarsViewModel : INotifyPropertyChanged
+    public class CarsViewModel : ObservableObject
     {
         private readonly IRepository repo;
         private Car selectedCar;
 
-        public event PropertyChangedEventHandler? PropertyChanged;
 
         public ObservableCollection<Car> Cars { get; set; }
 
-        public ICommand SaveCommand{ get; set; }
+        public ICommand SaveCommand { get; set; }
+        public ICommand NewCarCommand { get; set; }
+
         public Car SelectedCar
         {
-            get => selectedCar; 
+            get => selectedCar;
             set
             {
                 selectedCar = value;
-                PropertyChanged?.Invoke(this,new PropertyChangedEventArgs(nameof(SelectedCar)));
-                PropertyChanged?.Invoke(this,new PropertyChangedEventArgs(nameof(PS)));
+                OnPropertyChanged(nameof(SelectedCar));
+                OnPropertyChanged(nameof(PS));
             }
         }
 
@@ -43,6 +45,14 @@ namespace ppedv.CarRent7000.UI.WPF.ViewModel
             this.repo = repo;
             Cars = new ObservableCollection<Car>(repo.GetAll<Car>());
             SaveCommand = new SaveCommand(repo);
+
+            NewCarCommand = new RelayCommand(() =>
+            {
+                var car = new Car() { Model = "NEU" };
+                repo.Add(car);
+                Cars.Add(car);
+                SelectedCar = car;
+            });
         }
 
         //hack pfusch!!!
