@@ -12,7 +12,7 @@ namespace ppedv.CarRent7000.Data.EfCore
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             var constring = "Server=(localdb)\\mssqllocaldb;Database=CarRent7000_dev;Trusted_Connection=true";
-            optionsBuilder.UseSqlServer(constring);
+            optionsBuilder.UseLazyLoadingProxies().UseSqlServer(constring);
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)

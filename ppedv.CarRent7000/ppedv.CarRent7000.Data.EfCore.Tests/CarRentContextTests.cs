@@ -120,12 +120,16 @@ namespace ppedv.CarRent7000.Data.EfCore.Tests
 
             using (var con = new CarRentContext())
             {
-                var loaded = con.Cars.Include(x => x.Rents)
-                                     .ThenInclude(x => x.Biller)
-                                     .Include(x => x.Rents)
-                                     .ThenInclude(x => x.Driver)
-                                     .Where(x => x.Id == car.Id)
-                                     .FirstOrDefault();
+                //eager loading
+                //var loaded = con.Cars.Include(x => x.Rents)
+                //                     .ThenInclude(x => x.Biller)
+                //                     .Include(x => x.Rents)
+                //                     .ThenInclude(x => x.Driver)
+                //                     .Where(x => x.Id == car.Id)
+                //                     .FirstOrDefault();
+
+                //lazy loading
+                var loaded = con.Cars.Where(x => x.Id == car.Id).FirstOrDefault();
 
                 loaded.Should().BeEquivalentTo(car, x => x.IgnoringCyclicReferences());
             }

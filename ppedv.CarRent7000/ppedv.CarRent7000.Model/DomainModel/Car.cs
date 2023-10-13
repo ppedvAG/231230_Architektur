@@ -9,7 +9,7 @@
         public DateTime BuildDate { get; set; }
         public double Kilometer { get; set; }
 
-        public ICollection<Rent> Rents { get; set; } = new HashSet<Rent>();
+        public virtual ICollection<Rent> Rents { get; set; } = new HashSet<Rent>();
 
     }
 }

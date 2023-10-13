@@ -8,9 +8,9 @@
         public string StartLocation { get; set; } = string.Empty;
         public string? EndLocation { get; set; } = null;
 
-        public Car? Car { get; set; }
+        public virtual Car? Car { get; set; }
 
-        public Customer? Driver { get; set; }
-        public Customer? Biller { get; set; }
+        public virtual Customer? Driver { get; set; }
+        public virtual Customer? Biller { get; set; }
     }
 }

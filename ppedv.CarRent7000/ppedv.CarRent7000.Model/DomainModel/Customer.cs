@@ -6,7 +6,7 @@
         public string Adress { get; set; } = string.Empty;
         public DateTime Birthdate { get; set; }
 
-        public ICollection<Rent> RentsAsDriver { get; set; } = new HashSet<Rent>();
-        public ICollection<Rent> RentsAsBiller { get; set; } = new HashSet<Rent>();
+        public virtual ICollection<Rent> RentsAsDriver { get; set; } = new HashSet<Rent>();
+        public virtual ICollection<Rent> RentsAsBiller { get; set; } = new HashSet<Rent>();
     }
 }
