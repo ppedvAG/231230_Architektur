@@ -55,9 +55,6 @@ namespace ppedv.CarRent7000.UI.WPF.ViewModel
             });
         }
 
-        //hack pfusch!!!
-        public CarsViewModel() : this(new ppedv.CarRent7000.Data.EfCore.CarRentRepository())
-        { }
     }
 
 

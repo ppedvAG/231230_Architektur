@@ -1,8 +1,6 @@
-using Azure.Core;
 using NSubstitute;
 using ppedv.CarRent7000.Model.Contracts;
 using ppedv.CarRent7000.Model.DomainModel;
-using System.Buffers.Text;
 
 namespace ppedv.CarRent7000.Logic.Core.Tests.RentServiceTests
 {

@@ -7,7 +7,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\ppedv.CarRent7000.Data.EfCore\ppedv.CarRent7000.Data.EfCore.csproj" />
     <ProjectReference Include="..\ppedv.CarRent7000.Model\ppedv.CarRent7000.Model.csproj" />
   </ItemGroup>
 
